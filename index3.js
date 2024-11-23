@@ -3,21 +3,21 @@
 const fs = require("fs")
 
 // //sync...
-// fs.writeFileSync("./test.txt",'hello world sync..')
+fs.writeFileSync("./test.txt",'hello world sync..')
 
 // // async...
 
-// fs.writeFile("./tezt.txt",'hello world async...',(err,res)=>{
+fs.writeFile("./tezt.txt",'hello world async...',(err,res)=>{
 
-// })
+})
 
 //blocking...
-// console.log("hello 1");
+console.log("hello 1");
 
-// const result = fs.readFileSync("test.txt",'utf-8')
-// console.log(result);
+const result = fs.readFileSync("test.txt",'utf-8')
+console.log(result);
 
-// console.log("hello 2");
+console.log("hello 2");
 
 // non-blocking...
 
